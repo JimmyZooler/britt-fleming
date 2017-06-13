@@ -28,7 +28,9 @@
         padding: 5px 15px;
     }
 }
-
+#home-page-masonry {
+    overflow: auto;
+}
 .site-info {
     text-align: right;
     p {
@@ -36,3 +38,17 @@
         margin-top: 10px;
     }
 }
+
+#grid {
+    padding: 0 15px; 
+    div {
+        text-align: center;
+    }
+}
+
+#grid[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+.column { float: left; padding: 0 15px;}
+.size-1of3 { width: 33.333%; }
