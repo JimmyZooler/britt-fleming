@@ -34,14 +34,7 @@ if( $images ): ?>
 
     <main class="site-main" id="main" role="main">
 
-            <?php 
-            $args = array( 'post_type' => 'gallery', 'posts_per_page' => 10 );
-            $the_query = new WP_Query( $args ); 
-            if ( $the_query->have_posts() ) : ?>
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <img src="<?php get_the_post_thumbnail_url(); ?>" alt="<?php get_post_meta( $thumbnail->ID, '_wp_attachment_image_alt', true ); ?>" />
-                <h2><?php the_title(); ?></h2>
-            <?php endif; ?>
+            
 
         </main><!-- #main -->
 
