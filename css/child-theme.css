@@ -9233,3 +9233,33 @@ h1.navbar-brand a:hover {
 
 .gallery-caption {
   display: block; }
+
+.navbar-toggler {
+  border: 1px solid #333; }
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px); }
+  #slider .slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; }
+    #slider .slides li {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover; }
+
+#menu-footer-menu {
+  flex-direction: row; }
+  #menu-footer-menu .menu-item {
+    padding: 5px 15px; }
+
+.site-info {
+  text-align: right; }
+  .site-info p {
+    font-size: 13px;
+    margin-top: 10px; }
