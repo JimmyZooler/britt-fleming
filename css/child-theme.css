@@ -9237,6 +9237,9 @@ h1.navbar-brand a:hover {
 .navbar-toggler {
   border: 1px solid #333; }
 
+.navbar {
+  border-bottom: 1px solid #c2c2c2; }
+
 #slider {
   position: relative;
   width: 100%;
@@ -9258,14 +9261,20 @@ h1.navbar-brand a:hover {
   #menu-footer-menu .menu-item {
     padding: 5px 15px; }
 
-#home-page-masonry {
+#home-page-masonry, .wrapper-fluid, .wrapper-fluid #grid {
   overflow: auto; }
+
+.wrapper-fluid #grid {
+  padding-top: 15px; }
 
 .site-info {
   text-align: right; }
   .site-info p {
     font-size: 13px;
     margin-top: 10px; }
+
+#wrapper-footer {
+  clear: both; }
 
 #grid {
   padding: 0 15px; }
@@ -9278,6 +9287,8 @@ h1.navbar-brand a:hover {
 .column {
   float: left;
   padding: 0 15px; }
+  .column div {
+    padding: 15px 0; }
 
 .size-1of3 {
   width: 33.333%; }
