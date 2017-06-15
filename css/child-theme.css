@@ -9377,6 +9377,7 @@ body {
   transition-duration: 0s, 0s, .4s;
   transition-delay: .4s, .4s, 0s; }
   #menu-modal #modal-menu-wrap {
+    margin: auto;
     height: 100%;
     display: table; }
     #menu-modal #modal-menu-wrap #main-menu {
@@ -9387,15 +9388,24 @@ body {
         width: 100%;
         text-align: left;
         opacity: 0;
-        -webkit-transform: translateX(-40px);
-        -ms-transform: translateX(-40px);
-        transform: translateX(-40px);
-        transition-property: opacity, transform;
-        transition-duration: .3s, 0s;
-        transition-delay: 0s, .4s; }
+        transition-property: opacity;
+        transition-duration: .3s;
+        transition-delay: 0s; }
         #menu-modal #modal-menu-wrap #main-menu li a {
           font-size: 60px;
-          padding: 0.25em 1em; }
+          letter-spacing: 1px;
+          padding: 0;
+          zoom: 1;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+          -webkit-transition: -webkit-transform .2s;
+          -ms-transition: -ms-transform .2s;
+          transition: transform .2s; }
+
+#menu-modal #main-menu li a:hover {
+  text-decoration: underline;
+  transform: scale(0.97, 0.97) !important; }
 
 .menuOpen #menu-modal {
   z-index: 1;
@@ -9411,9 +9421,10 @@ body {
   -webkit-transition-delay: 0s, 0s, 0s; }
   .menuOpen #menu-modal #modal-menu-wrap #main-menu li {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    transform: translateX(0px); }
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-delay: 0s;
+    transition-timing-function: linear, cubic-bezier(0.07, 0.77, 0.26, 1.31); }
 
 /******************************
 *    Homepage Styles
