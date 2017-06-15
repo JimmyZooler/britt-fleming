@@ -21,8 +21,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+    <style>
+        @font-face {
+            font-family: 'Nevis-Bold';
+            src:url('<?php echo get_home_url(); ?>/wp-content/themes/understrap-child/fonts/Nevis-Bold.ttf.woff') format('woff'),
+                url('<?php echo get_home_url(); ?>/wp-content/themes/understrap-child/fonts/Nevis-Bold.ttf.svg#Nevis-Bold') format('svg'),
+                url('<?php echo get_home_url(); ?>/wp-content/themes/understrap-child/fonts/Nevis-Bold.ttf.eot'),
+                url('<?php echo get_home_url(); ?>/wp-content/themes/understrap-child/fonts/Nevis-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
-
 <body <?php body_class(); ?>>
 
 <div class="hfeed site" id="page">
