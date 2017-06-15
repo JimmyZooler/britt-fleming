@@ -35,11 +35,14 @@ body {
             position: absolute;
             right: 0px;
             display: block;
-            width: 34px;
-            height: 3px;
+            width: 30px;
+            height: 2px;
             background-color: #000;
         }
         
+    }
+    .img-fluid {
+        max-width: 80%;
     }
 }
 #menu-button .line:nth-child(1) {
@@ -56,11 +59,11 @@ body {
     -webkit-transition-timing-function: ease-in-out;
 }
 #menu-button .line:nth-child(2) {
-    top: 11px;
+    top: 9px;
     transition: all .3s ease-in-out;
 }
 #menu-button .line:nth-child(3) {
-     top: 22px;
+     top: 18px;
     opacity: 1;
     -webkit-transform: rotate(0deg) translate(0px, 0px);
     -ms-transform: rotate(0deg) translate(0px, 0px);
@@ -161,8 +164,9 @@ body {
                 transition-property: opacity;
                 transition-duration: .3s;
                 transition-delay: 0s;
+                margin-left: 20px;
                 a {
-                    font-size: 60px;
+                    font-size: 40px;
                     letter-spacing: 1px;
                     padding: 0;
                     zoom: 1;
@@ -239,9 +243,15 @@ h2, .menu-item a {
     text-transform: uppercase;
 }
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+}
+#grid .column a {
     color: #333;
+}
+#grid .column a:hover,#grid .column a:focus {
+    color: #555;
+    text-decoration: underline;
 }
 #home-page-masonry h2 {
     margin-top: 20px;
@@ -322,6 +332,9 @@ h2 {
 .size-1of2 { width: 50%; }
 
 @media screen and (min-width: 768px) { 
+    h2 {
+        font-size: 1.4rem;
+    }
     .col-md-6 .menu-footer-menu-container {
         text-align: left!important;
     }
@@ -331,7 +344,34 @@ h2 {
     .navbar {
         .container-fluid { 
             text-align: center;
+            .img-fluid {
+                max-width: 100%;
+            }
         }
+        #menu-button {
+            .line {
+                height: 3px;
+                width: 34px;
+            }
+        }
+    }
+    #menu-modal {
+        #modal-menu-wrap {
+            #main-menu {
+                li {
+                    a {
+                        font-size: 65px;
+                    }
+                }
+            }
+        }
+    }
+    
+    #menu-button .line:nth-child(2) {
+        top: 11px;
+    }
+    #menu-button .line:nth-child(3) {
+         top: 22px;
     }
         
 }
