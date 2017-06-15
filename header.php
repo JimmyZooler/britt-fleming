@@ -37,6 +37,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
+        <?php else : ?>
+            <div class="container-fluid">
 		<?php endif; ?>
 
 				<!-- Your site title as branding in the menu -->
@@ -56,26 +58,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
                 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                <div id="menu-button">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <div id="menu-modal">
+                    <!-- The WordPress Menu goes here -->
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location'  => 'primary',
+                            'container_class' => '',
+                            'container_id'    => 'modal-menu-wrap',
+                            'menu_class'      => 'nav',
+                            'fallback_cb'     => '',
+                            'menu_id'         => 'main-menu',
+                            'walker'          => new WP_Bootstrap_Navwalker(),
+                        )
+                    ); ?>
+                </div>
+                
                 
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
+            <?php else : ?>
+            </div>
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
