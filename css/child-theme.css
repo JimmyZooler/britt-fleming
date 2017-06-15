@@ -9465,8 +9465,10 @@ h2 {
   color: #555;
   text-decoration: underline; }
 
-#home-page-masonry h2 {
-  margin-top: 20px; }
+#home-page-masonry {
+  padding-top: 20px; }
+  #home-page-masonry h2 {
+    margin-top: 20px; }
 
 /****************************
 *    Footer Styles
@@ -9504,7 +9506,8 @@ h2 {
       color: #444; }
 
 #wrapper-footer {
-  clear: both; }
+  clear: both;
+  padding-bottom: 10px; }
 
 /********************************
 *    Masonry Styles
@@ -9545,6 +9548,9 @@ h2 {
     text-align: left !important; }
   .site-info {
     text-align: right !important; }
+  .site-footer {
+    padding-left: 20px;
+    padding-right: 35px; }
   .navbar .container-fluid {
     text-align: center; }
     .navbar .container-fluid .img-fluid {
