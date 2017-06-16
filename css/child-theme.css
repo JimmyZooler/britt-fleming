@@ -9395,6 +9395,7 @@ body {
       display: table-cell;
       vertical-align: middle; }
       #menu-modal #modal-menu-wrap #main-menu li {
+        position: relative;
         display: block;
         width: 100%;
         text-align: left;
@@ -9404,6 +9405,7 @@ body {
         transition-delay: 0s;
         margin-left: 20px; }
         #menu-modal #modal-menu-wrap #main-menu li a {
+          position: relative;
           font-size: 40px;
           letter-spacing: 1px;
           padding: 0;
@@ -9418,6 +9420,26 @@ body {
 #menu-modal #main-menu li a:hover {
   text-decoration: underline;
   transform: scale(0.97, 0.97) !important; }
+
+#menu-modal #main-menu .instagram a {
+  text-indent: -9999px; }
+
+#menu-modal #main-menu .instagram:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 60px;
+  color: #99cccc;
+  content: '\f16d';
+  font-family: FontAwesome;
+  zoom: 1;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: -webkit-transform .2s;
+  -ms-transition: -ms-transform .2s;
+  transition: transform .2s; }
 
 .menuOpen #menu-modal {
   z-index: 1;
@@ -9604,7 +9626,9 @@ h2 {
   #contact .column-contact:nth-child(2) {
     text-align: right; }
   #contact .column-contact:nth-child(3) {
-    text-align: left; } }
+    text-align: left; }
+  #menu-modal #main-menu .instagram:before {
+    font-size: 70px; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   #grid[data-columns]::before {
