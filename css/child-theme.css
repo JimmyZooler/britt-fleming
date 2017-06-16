@@ -9550,6 +9550,28 @@ h2 {
 .size-1of2 {
   width: 50%; }
 
+/********************************
+*    Info Page Styles
+*********************************/
+#contact {
+  text-align: center;
+  margin: 60px 0; }
+  #contact h2 {
+    width: 100%;
+    margin-bottom: 40px; }
+  #contact .contact-info {
+    font-size: 20px; }
+  #contact #emailAddress:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f0e0";
+    margin-right: 20px; }
+  #contact #phoneNumber:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f095";
+    margin-right: 20px; }
+
 @media screen and (min-width: 768px) {
   body {
     padding-top: 91px; }
@@ -9578,7 +9600,11 @@ h2 {
   #menu-button .line:nth-child(3) {
     top: 22px; }
   .menuOpen #menu-button {
-    top: 45px; } }
+    top: 45px; }
+  #contact .column-contact:nth-child(2) {
+    text-align: right; }
+  #contact .column-contact:nth-child(3) {
+    text-align: left; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   #grid[data-columns]::before {
