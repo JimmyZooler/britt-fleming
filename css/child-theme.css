@@ -9575,6 +9575,9 @@ h2 {
 /********************************
 *    Info Page Styles
 *********************************/
+#info-page-content {
+  padding-top: 80px; }
+
 #contact {
   text-align: center;
   margin: 60px 0; }
