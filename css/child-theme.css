@@ -9235,6 +9235,7 @@ h1.navbar-brand a:hover {
   display: block; }
 
 body {
+  padding-top: 75px;
   font-family: Lato, "Helvetica Neue", Arial, sans-serif; }
 
 .container-fluid {
@@ -9251,14 +9252,22 @@ body {
   border: 1px solid #333; }
 
 .navbar {
-  border-bottom: 1px solid #c2c2c2; }
+  border-bottom: 1px solid #c2c2c2;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding-bottom: 0;
+  padding-top: 0; }
   .navbar #menu-button {
     position: absolute;
     z-index: 2;
     top: 50%;
     right: 30px;
     width: 34px;
-    height: 24px;
+    height: 22px;
     cursor: pointer;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -9360,7 +9369,7 @@ body {
 
 .menuOpen #menu-button {
   position: fixed;
-  top: 53.5px;
+  top: 37px;
   right: 46px; }
 
 #menu-modal {
@@ -9542,6 +9551,8 @@ h2 {
   width: 50%; }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding-top: 91px; }
   h2 {
     font-size: 1.4rem; }
   .col-md-6 .menu-footer-menu-container {
@@ -9555,15 +9566,19 @@ h2 {
     text-align: center; }
     .navbar .container-fluid .img-fluid {
       max-width: 100%; }
-  .navbar #menu-button .line {
-    height: 3px;
-    width: 34px; }
+  .navbar #menu-button {
+    height: 24px; }
+    .navbar #menu-button .line {
+      height: 3px;
+      width: 34px; }
   #menu-modal #modal-menu-wrap #main-menu li a {
     font-size: 65px; }
   #menu-button .line:nth-child(2) {
     top: 11px; }
   #menu-button .line:nth-child(3) {
-    top: 22px; } }
+    top: 22px; }
+  .menuOpen #menu-button {
+    top: 45px; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   #grid[data-columns]::before {
