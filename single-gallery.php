@@ -21,7 +21,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
         if( $images ): ?>
             
                 <?php foreach( $images as $image ): ?>
-                    <div>
+                    <div class="gallery-image">
                         <a href="<?php echo $image['url']; ?>">
                              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                         </a>
