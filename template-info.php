@@ -11,7 +11,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <main class="site-main" id="main" role="main">
-    <div class="wrapper" id="info-page-content">
+    <div class="wrapper" id="info-page-content" style="">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">

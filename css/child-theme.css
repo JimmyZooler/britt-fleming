@@ -9576,7 +9576,13 @@ h2 {
 *    Info Page Styles
 *********************************/
 #info-page-content {
-  padding-top: 80px; }
+  padding-top: 80px;
+  position: relative; }
+
+.page-template-template-info {
+  background-image: url("../images/FadeChevron_bg_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 #contact {
   text-align: center;
@@ -9596,6 +9602,20 @@ h2 {
     display: inline-block;
     content: "\f095";
     margin-right: 20px; }
+
+/********************************
+*    slideshow Page Styles
+*********************************/
+#slideshows-page-content {
+  padding-top: 50px; }
+  #slideshows-page-content .slideshow {
+    padding-top: 50px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.5); }
+    #slideshows-page-content .slideshow iframe {
+      width: 100%; }
+    #slideshows-page-content .slideshow h2 {
+      margin-top: 20px;
+      margin-bottom: 40px; }
 
 @media screen and (min-width: 768px) {
   body {
