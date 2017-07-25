@@ -17,17 +17,17 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php 
 
             if( have_rows('slideshows') ): ?>
-                <div class="row slideshow">
-                    <?php while ( have_rows('slideshows') ) : the_row(); ?>
-                    <div class="col-md-9">
-                        <?php echo the_sub_field('slideshow_embed'); ?>
-                        <h2><?php echo the_sub_field('slideshow_title'); ?></h2>
+                <?php while ( have_rows('slideshows') ) : the_row(); ?>
+                    <div class="row slideshow">
+                        <div class="col-md-9">
+                            <?php echo the_sub_field('slideshow_embed'); ?>
+                            <h2><?php echo the_sub_field('slideshow_title'); ?></h2>
+                        </div>
+                        <div class="col-md-3">
+                            <p><?php echo the_sub_field('slideshow_description'); ?></p>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <p><?php echo the_sub_field('slideshow_description'); ?></p>
-                    </div>
-                    <?php endwhile; ?>
-                </div>
+                <?php endwhile; ?>
             <?php endif; ?>
             
             

@@ -9430,7 +9430,7 @@ body {
   left: 0;
   width: 100%;
   font-size: 60px;
-  color: #99cccc;
+  color: #9999cc;
   content: '\f16d';
   font-family: FontAwesome;
   zoom: 1;
@@ -9525,6 +9525,9 @@ h2 {
 #menu-footer-menu li:nth-child(5) a, #main-menu li:nth-child(5) a {
   color: #99cccc; }
 
+#menu-footer-menu li:nth-child(6) a, #main-menu li:nth-child(6) a {
+  color: #9999cc; }
+
 .site-footer .col-md-6 .menu-footer-menu-container {
   text-align: center; }
 
@@ -9617,6 +9620,70 @@ h2 {
       margin-top: 20px;
       margin-bottom: 40px; }
 
+/********************************
+*    Blog Page Styles
+*********************************/
+#blog-masonry {
+  margin-top: 20px; }
+  #blog-masonry h2 {
+    margin-top: 20px; }
+
+#single-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.nav-links {
+  padding: 10px 0; }
+  .nav-links .nav-next, .nav-links .nav-previous {
+    padding: 8px 10px; }
+  .nav-links a {
+    font-weight: bold;
+    font-size: 18px; }
+    .nav-links a i {
+      margin: 0 10px;
+      font-weight: bold; }
+
+.single-post header {
+  padding: 0 15px; }
+
+.single-post .entry-content {
+  padding: 0 15px; }
+
+.single-post #post-gallery {
+  border-top: 1px solid rgba(33, 33, 33, 0.5); }
+
+#cv-page-content h2 {
+  font-size: 2rem; }
+
+#cv-page-content #client-list {
+  text-align: center;
+  padding: 0 20px; }
+  #cv-page-content #client-list h2 {
+    margin: 40px 0 20px; }
+  #cv-page-content #client-list .client {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    height: calc(1140px * 0.33); }
+    #cv-page-content #client-list .client .client-overlay {
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center; }
+      #cv-page-content #client-list .client .client-overlay h3 {
+        color: #fff; }
+
+/********************************
+*    Media Queries
+*********************************/
 @media screen and (min-width: 768px) {
   body {
     padding-top: 91px; }
